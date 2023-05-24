@@ -1,4 +1,4 @@
- local status, ts = pcall(require, "nvim-treesitter.configs")
+local status, ts = pcall(require, "nvim-treesitter.configs")
 if (not status) then return end
 
 ts.setup {
@@ -23,7 +23,8 @@ ts.setup {
     "swift",
     "css",
     "html",
-    "lua"
+    "lua",
+    "go"
   },
   autotag = {
     enable = true,

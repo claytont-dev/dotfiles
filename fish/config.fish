@@ -15,7 +15,12 @@ alias la "ls -A"
 alias ll "ls -l"
 alias lla "ll -A"
 alias g git
-alias config "cd ~/.config/"
+
+alias config "nvim ~/.config/"
+alias cnvim "nvim ~/.config/nvim"
+alias cfish "nvim ~/.config/fish"
+alias ctmux "nvim ~/.config/tmux"
+
 command -qv nvim && alias vim nvim
 
 set -gx EDITOR nvim
@@ -23,6 +28,8 @@ set -gx EDITOR nvim
 set -gx PATH bin $PATH
 set -gx PATH ~/bin $PATH
 set -gx PATH ~/.local/bin $PATH
+set -gx PATH /opt/homebrew/bin $PATH
+set -gx PATH ~/.sdkman/bin/sdkman-init.sh $PATH
 
 # NodeJS
 set -gx PATH node_modules/.bin $PATH
