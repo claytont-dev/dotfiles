@@ -105,8 +105,12 @@ nvim_lsp.lua_ls.setup {
 }
 
 nvim_lsp.gopls.setup {
+  on_attach = function(client, bufnr)
+    on_attach(client, bufnr)
+    enable_format_on_save(client, bufnr)
+  end,
   cmd = { "gopls", "serve" },
-  filetypes = { "go", "gomod" },
+  filetypes = { "go", "gomod", "test.go" },
   root_dir = nvim_lsp.util.root_pattern("go.work", "go.mod", ".git"),
   settings = {
     gopls = {

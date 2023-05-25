@@ -11,6 +11,7 @@ local fb_actions = require "telescope".extensions.file_browser.actions
 
 telescope.setup {
   defaults = {
+    file_ignore_patterns = { 'node_modules' },
     mappings = {
       n = {
         ["q"] = actions.close
@@ -42,13 +43,7 @@ telescope.setup {
 
 telescope.load_extension("file_browser")
 
-vim.keymap.set('n', ';f',
-  function()
-    builtin.find_files({
-      no_ignore = false,
-      hidden = true
-    })
-  end)
+vim.keymap.set('n', '<leader>pf', builtin.find_files, {})
 vim.keymap.set('n', ';r', function()
   builtin.live_grep()
 end)

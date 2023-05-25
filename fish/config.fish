@@ -20,6 +20,8 @@ alias config "nvim ~/.config/"
 alias cnvim "nvim ~/.config/nvim"
 alias cfish "nvim ~/.config/fish"
 alias ctmux "nvim ~/.config/tmux"
+alias projects "cd ~/projects"
+alias cycle "cd ~/projects/cycle"
 
 command -qv nvim && alias vim nvim
 

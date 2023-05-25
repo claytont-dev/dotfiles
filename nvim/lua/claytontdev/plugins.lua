@@ -23,6 +23,10 @@ packer.startup(function(use)
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
 
+  -- Harpoon
+  use 'nvim-lua/plenary.nvim'
+  use 'ThePrimeagen/harpoon'
+
   use 'glepnir/lspsaga.nvim' -- LSP UIs
   use 'L3MON4D3/LuaSnip'
   use {

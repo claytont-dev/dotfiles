@@ -1,36 +1,40 @@
-local keymap = vim.keymap
-
 -- Leader = space bar
 vim.g.mapleader = " "
 
+-- Clear Selection
+vim.keymap.set('n', 'L', ':noh<Return>')
+
+
 -- Open Vim Builtin File Explorer
-keymap.set('n', '<leader>pv', vim.cmd.Ex)
+vim.keymap.set('n', '<leader>pv', vim.cmd.Ex)
 
 -- Quit Editor
-keymap.set('n', 'qe', ':q<Return>')
+vim.keymap.set('n', 'qe', ':q<Return>')
 
 -- Remap Delete Key
-keymap.set('n', 'x', '"_x')
+vim.keymap.set('n', 'x', '"_x')
 
 -- Select all
-keymap.set('n', '<C-a>', 'gg<S-v>G')
+vim.keymap.set('n', '<C-a>', 'gg<S-v>G')
 
 -- New tab
-keymap.set('n', 'te', ':tabedit ')
+vim.keymap.set('n', 'te', ':tabedit ')
 
 -- Split window
-keymap.set('n', 'ss', ':split<Return><C-w>w')
-keymap.set('n', 'sv', ':vsplit<Return><C-w>w')
+vim.keymap.set('n', 'ss', ':split<Return><C-w>w')
+vim.keymap.set('n', 'sv', ':vsplit<Return><C-w>w')
 
 -- Move window
-keymap.set('n', '<Space>', '<C-w>w')
-keymap.set('', 'sh', '<C-w>h')
-keymap.set('', 'sk', '<C-w>k')
-keymap.set('', 'sj', '<C-w>j')
-keymap.set('', 'sl', '<C-w>l')
+vim.keymap.set('n', '<Space>', '<C-w>w')
+vim.keymap.set('', 'sh', '<C-w>h')
+vim.keymap.set('', 'sk', '<C-w>k')
+vim.keymap.set('', 'sj', '<C-w>j')
+vim.keymap.set('', 'sl', '<C-w>l')
 
 -- Resize window
-keymap.set('n', '<C-w><left>', '<C-w><')
-keymap.set('n', '<C-w><right>', '<C-w>>')
-keymap.set('n', '<C-w><up>', '<C-w>+')
-keymap.set('n', '<C-w><down>', '<C-w>-')
+vim.keymap.set('n', '<C-w><left>', '<C-w><')
+vim.keymap.set('n', '<C-w><right>', '<C-w>>')
+vim.keymap.set('n', '<C-w><up>', '<C-w>+')
+vim.keymap.set('n', '<C-w><down>', '<C-w>-')
+
+vim.keymap.set('n', 'q', '<Nop>')
