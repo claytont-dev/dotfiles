@@ -1,5 +1,0 @@
-require('claytontdev.base')
-require('claytontdev.highlights')
-require('claytontdev.remaps')
-require('claytontdev.plugins')
-require('claytontdev.macos')
