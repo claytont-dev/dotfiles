@@ -31,7 +31,7 @@
 
 <h3>Homebrew Packages:</h3>
 
-- [Fish-Shell](https://formulae.brew.sh/formula/fish#default) ***Recommneded but optional bash or zsh work also***
+- [Fish-Shell](https://formulae.brew.sh/formula/fish#default) ***Recommended but optional bash or zsh work also***
     - Make this your default shell
         1. Provided you installed via hombrew add ```/opt/homebrew/bin/fish ``` to ```/etc/shells```. Otherwise add the result of ```which fish```.
         2. Change default shell with ```chsh -s /opt/homebrew/bin/fish``` or whatever path you added to ```/etc/shells```
