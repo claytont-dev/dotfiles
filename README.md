@@ -15,6 +15,7 @@
 - Any terminal that supports xterm-256color.
 - Basic command-line knowledge
 
+<h3>Clone this repo into ~/.config</h3>
 
 <h3>Iterm2:</h3> 
 
@@ -50,3 +51,4 @@
 <h3>Node Modules:</h3>
 
 - For TS / JS LSP to work: ```npm install typescript -g```
+
