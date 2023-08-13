@@ -8,6 +8,7 @@ This guide is for you if any of these apply:
 
 Prereqs: 
 
+- OSX / Linux
 - Homebrew
 - Basic command-line knowledge
 
