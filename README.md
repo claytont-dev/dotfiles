@@ -40,6 +40,7 @@
     - Fantastic video series on learning [vim motions](https://youtube.com/playlist?list=PLm323Lc7iSW_wuxqmKx_xxNtJC_hJbQ7R). Watch no more than one video per 1-2 weeks. Otherwise will be angry and back in vscode by the end of the day, nobody wants that.
 - [RipGrep](https://formulae.brew.sh/formula/ripgrep)
 - [Glow](https://formulae.brew.sh/formula/glow#default) - For viewing markdown in terminal.
+- [tmux](https://formulae.brew.sh/formula/tmux)
 
 
 <h3>Fisher Packages:</h3>
