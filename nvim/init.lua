@@ -92,7 +92,7 @@ local on_attach = function(_, bufnr)
   nmap('<leader>ws', require('telescope.builtin').lsp_dynamic_workspace_symbols, '[W]orkspace [S]ymbols')
 
   nmap('K', vim.lsp.buf.hover, 'Hover Documentation')
-  nmap('<C-h>', vim.lsp.buf.signature_help, 'Signature Documentation')
+  --nmap('<C-h>', vim.lsp.buf.signature_help, 'Signature Documentation')
 
   -- Command `:Format` to manually format the current buffer
   vim.api.nvim_buf_create_user_command(bufnr, 'Format', function(_)
